@@ -45,7 +45,7 @@ const StateDemo = () => {
             <h1 className="text-center mt-5 mb-5 font-bold text-4xl underline">
                 Welcome to state demo!
             </h1>
-            <ul
+            {/* <ul
                 className={`${
                     showStudents ? '' : 'opacity-0'
                 } flex flex-col items-center justify-around`}
@@ -53,7 +53,7 @@ const StateDemo = () => {
                 {students.map((el) => (
                     <Student key={el.id} {...el} />
                 ))}
-            </ul>
+            </ul> */}
             {/* {showStudents ? (
                 <ul className="flex flex-col items-center justify-around">
                     {students.map((el) => (
@@ -61,13 +61,13 @@ const StateDemo = () => {
                     ))}
                 </ul>
             ) : null} */}
-            {/* {showStudents && (
+            {showStudents && (
                 <ul className="flex flex-col items-center justify-around">
                     {students.map((el) => (
                         <Student key={el.id} {...el} />
                     ))}
                 </ul>
-            )} */}
+            )}
             <section className="flex flex-col w-64 justify-center items-center my-0 mx-auto border-gray-500">
                 <input
                     className="border-b-2 outline-none mt-5 border-solid border-gray-500"
